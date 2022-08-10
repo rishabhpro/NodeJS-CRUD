@@ -5,7 +5,7 @@ const connect = require('./../database/db')
 const bookcontroller = require('.././controllers/bookcontroller')
 
 
-bookrouter.route('/book')
+bookrouter.route('/')
 .get(bookcontroller.getAllBooks)
 .post(bookcontroller.addbook);
 

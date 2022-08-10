@@ -8,7 +8,7 @@ const BookSchema = new Schema({
             validator: function(value){
                 return /^[a-zA-Z\s]*$/.test(value);
             },
-            message: 'Must be a valid title'
+            message: 'Must be a valid title name'
         },
         required : true
     },
@@ -18,7 +18,7 @@ const BookSchema = new Schema({
             validator: function(value){
                 return /^[a-zA-Z\s]*$/.test(value);
             },
-            message: 'Must be a valid title'
+            message: 'Must be a valid author name'
         },
         required : true,
 
